@@ -68,6 +68,7 @@ A perceptron can be thought of as just a single neuron.
         - Vanishing gradient
         - Saturated neurons
 - **ReLU:**
+    - Most commonly used activation function today
     - $f(x) = \max(0, x)$
     - **Pros:**
         - Simple, efficient
