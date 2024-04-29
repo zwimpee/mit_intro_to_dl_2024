@@ -1,6 +1,3 @@
-# MIT Intro to Deep Learning Course Notes
-- Course webpage: [introtodeeplearning](http://introtodeeplearning.com/)
-- My course repo: [mit_intro_to_dl_2024](https://github.com/zwimpee/mit_intro_to_dl_2024)
 ## Lecture 1
 ### 1. Introduction: What is deep learning and why now?
 Deep learning is quickly becoming a ubiquitous framework on which a number of paradigm shifting technologies are being built. This is fairly well understood and is easily observable for many people. What is less clear, however, is the answer to the following question: *why now?*
@@ -78,18 +75,8 @@ A perceptron can be thought of as just a single neuron.
         - Dying ReLU problem
         - Not smooth, not differentiable
 
-##### Example 1: The importance of Activation Functions
+##### The importance of Activation Functions
 The purpose of activation functions is to introduce non-linearity into the model. Without non-linearity, the model would be limited to learning only linear functions, which are not sufficient to model the complexity of real-world data.
 
 More formally, without non-linear activation functions, a neural network is just a linear regression model. This is because the output of a linear combination of linear functions is itself a linear function. This means that the model would not be able to learn complex patterns in the data if those patterns cannot be described or represented by a linear function, or a linear combination of linear functions, which very often is the case.
 
-To make things more concrete, consider the following example:
-- **Linear Model:**
-    - $y = w_1x_1 + w_2x_2 + b$
-- **Non-linear Model:**
-    - $y = w_1f(x_1) + w_2f(x_2) + b$
-    - where $f$ is a non-linear activation function
-
-In the linear model, the output $y$ is a linear combination of the input features $x_1$ and $x_2$. This means that the model can only learn linear relationships between the input features and the output. In contrast, the non-linear model introduces non-linearity through the activation function $f$, allowing the model to learn complex patterns in the data that cannot be captured by a linear model.
-
-This is why activation functions are a crucial component of neural networks, as they enable the model to learn complex, non-linear relationships in the data, which is essential for tasks such as image recognition, natural language processing, and other applications where the data is inherently non-linear. Wwe leave it as an exercise to the reader to convince themselves it is the case that most systems we are interested in modeling are inherently non-linear.

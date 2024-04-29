@@ -8,10 +8,14 @@ The MIT Introduction to Deep Learning course is a comprehensive introduction to 
 
 ## Table of Contents
 
+- [Lectures](#lectures)
 - [Assignments](#assignments)
 - [Projects](#projects)
 - [Resources](#resources)
 - [License](#license)
+
+## Lectures
+- [Lecture 1](lectures/lecture1.md)
 
 ## Assignments
 
