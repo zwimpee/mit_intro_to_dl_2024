@@ -41,7 +41,20 @@ We may begin to answer this (loosely) in 3 different parts:
 ### 2. The Perceptron: The structural building block of deep learning
 - **TODO: Go back and fill out incomplete sections**
 #### 1. Forward Propagation
-A perceptron can be thought of as just a single neuron.
+A perceptron can be thought of as just a single neuron. Mathematically, it can be represented as follows:
+- **Input:**
+    - $x = [x_1, x_2, ..., x_n]$
+- **Weights:**
+    - $w = [w_1, w_2, ..., w_n]$
+- **Bias:**
+    - $w_0$
+- **Output:**
+    - $y = f(w \cdot x + w_0)$
+- **Activation Function:**
+    - $f(x) = \begin{cases} 1 & \text{if } x > 0 \\ 0 & \text{otherwise} \end{cases}$
+
+Putting all of this together in a simplified form, we can write the output of a perceptron as follows:
+- $y = f(w \cdot x + w_0)$, where $f(x) = \begin{cases} 1 & \text{if } x > 0 \\ 0 & \text{otherwise} \end{cases}$
 
 
 #### 2. Non-linear activation functions
@@ -75,18 +88,8 @@ A perceptron can be thought of as just a single neuron.
         - Dying ReLU problem
         - Not smooth, not differentiable
 
-##### Example 1: The importance of Activation Functions
-The purpose of activation functions is to introduce non-linearity into the model. Without non-linearity, the model would be limited to learning only linear functions, which are not sufficient to model the complexity of real-world data.
 
-More formally, without non-linear activation functions, a neural network is just a linear regression model. This is because the output of a linear combination of linear functions is itself a linear function. This means that the model would not be able to learn complex patterns in the data if those patterns cannot be described or represented by a linear function, or a linear combination of linear functions, which very often is the case.
 
-To make things more concrete, consider the following example:
-- **Linear Model:**
-    - $y = w_1x_1 + w_2x_2 + b$
-- **Non-linear Model:**
-    - $y = w_1f(x_1) + w_2f(x_2) + b$
-    - where $f$ is a non-linear activation function
+### 3. The Perceptron: Example
+![Perceptron Example](/mit_intro_to_dl_2024/images/perceptron_example.png) 
 
-In the linear model, the output $y$ is a linear combination of the input features $x_1$ and $x_2$. This means that the model can only learn linear relationships between the input features and the output. In contrast, the non-linear model introduces non-linearity through the activation function $f$, allowing the model to learn complex patterns in the data that cannot be captured by a linear model.
-
-This is why activation functions are a crucial component of neural networks, as they enable the model to learn complex, non-linear relationships in the data, which is essential for tasks such as image recognition, natural language processing, and other applications where the data is inherently non-linear. Wwe leave it as an exercise to the reader to convince themselves it is the case that most systems we are interested in modeling are inherently non-linear.
