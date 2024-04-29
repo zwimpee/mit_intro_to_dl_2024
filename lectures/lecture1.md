@@ -113,3 +113,5 @@ $$
 y = f(z) = \begin{cases} 1 & \text{if } z > 0 \\ 0 & \text{otherwise} \end{cases} = 0
 $$
 (assuming the ReLU activation function is used).
+
+### 3. Building Neural Networks with Perceptrons
