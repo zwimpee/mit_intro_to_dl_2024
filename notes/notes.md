@@ -1,6 +1,6 @@
 # MIT Intro to Deep Learning Course Notes
 - Course webpage: [introtodeeplearning](http://introtodeeplearning.com/)
-- My course repo: [mit_intro_to_dl_2024](TODO: Publish public repo)
+- My course repo: [mit_intro_to_dl_2024](https://github.com/zwimpee/mit_intro_to_dl_2024)
 ## Lecture 1
 ### 1. Introduction: What is deep learning and why now?
 Deep learning is quickly becoming a ubiquitous framework on which a number of paradigm shifting technologies are being built. This is fairly well understood and is easily observable for many people. What is less clear, however, is the answer to the following question: *why now?*
@@ -42,8 +42,10 @@ We may begin to answer this (loosely) in 3 different parts:
     - <s>Tensorflow is dead, all hail PyTorch</s>
         - Pytorch is dead, all hail JAX!
 ### 2. The Perceptron: The structural building block of deep learning
-#### Forward Propagation
+- **TODO: Go back and fill out incomplete sections**
+#### 1. Forward Propagation
 A perceptron can be thought of as just a single neuron.
-- **TODO: Go back and fill out this section**
-    - Non-linear activation functions
-        - Sigmoid
+
+
+#### 2. Non-linear activation functions
+    - Sigmoid
