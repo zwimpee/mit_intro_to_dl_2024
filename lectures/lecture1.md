@@ -40,7 +40,7 @@ We may begin to answer this (loosely) in 3 different parts:
         - Pytorch is dead, all hail JAX!
 ### 2. The Perceptron: The structural building block of deep learning
 - **TODO: Go back and fill out incomplete sections**
-#### 1. Forward Propagation
+#### 1. Overview
 A perceptron can be thought of as just a single neuron. Mathematically, it can be represented as follows:
 - **Input:**
     - $x = [x_1, x_2, ..., x_n]$
@@ -90,7 +90,7 @@ Putting all of this together in a simplified form, we can write the output of a 
 
 
 
-### 3. The Perceptron: Example
+#### 3. The Perceptron: Example
 ![Perceptron Example](/mit_intro_to_dl_2024/images/perceptron_example.png) 
 
 
