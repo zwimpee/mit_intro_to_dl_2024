@@ -93,3 +93,23 @@ Putting all of this together in a simplified form, we can write the output of a 
 ### 3. The Perceptron: Example
 ![Perceptron Example](/mit_intro_to_dl_2024/images/perceptron_example.png) 
 
+
+As can be seen in the image above, we have 
+$$
+w_0 = 1
+$$
+and
+$$
+W = \begin{bmatrix} 3 \\ -2 \end{bmatrix}
+$$
+
+Then for an input $x=\begin{bmatrix} 1 \\ 2 \end{bmatrix}$, we can compute the weighted sum $z$ as follows:
+$$
+z = W \cdot x + w_0 = \begin{bmatrix} 3 \\ -2 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 2 \end{bmatrix} + 1 = 3 \cdot 1 + -2 \cdot 2 + 1 = 3 - 4 + 1 = 0
+$$
+
+Finally, we can compute the output $y$ as follows:  
+$$
+y = f(z) = \begin{cases} 1 & \text{if } z > 0 \\ 0 & \text{otherwise} \end{cases} = 0
+$$
+(assuming the ReLU activation function is used).
