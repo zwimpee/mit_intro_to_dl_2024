@@ -115,3 +115,33 @@ $$
 (assuming the ReLU activation function is used).
 
 ### 3. Building Neural Networks with Perceptrons
+#### 1. Overview
+- **Layers:**
+    - A neural network is composed of layers of perceptrons
+    - Each layer can be thought of as a transformation of the input data
+- **Activation functions:**
+    - Each perceptron in a layer applies an activation function to the weighted sum of its inputs
+    - Common activation functions include ReLU, sigmoid, and tanh
+- **Output layer:**
+    - The final layer of a neural network is the output layer
+    - The activation function used in the output layer depends on the task being performed
+    - For binary classification, a sigmoid activation function is often used
+    - For multi-class classification, a softmax activation function is often used
+    - For regression tasks, a linear activation function is often used
+- **Loss function:**
+    - The loss function measures the error between the predicted output and the true output
+    - Common loss functions include mean squared error (MSE) for regression and binary cross-entropy for binary classification
+- **Optimization:**
+    - The goal of training a neural network is to minimize the loss function
+    - This is typically done using gradient descent or one of its variants
+    - The backpropagation algorithm is used to compute the gradients of the loss function with respect to the weights of the network
+- **Training:**
+    - Training a neural network involves updating the weights of the network using an optimization algorithm
+    - The network is trained on a dataset of input-output pairs
+    - The weights are updated iteratively to minimize the loss function
+- **Validation:**
+    - After training, the network is evaluated on a separate validation set to assess its performance
+    - This helps to prevent overfitting and ensures that the network generalizes well to unseen data
+
+#### 2. Example: Building a Neural Network
+TODO: Add example of building a neural network using PyTorch
