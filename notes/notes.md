@@ -48,4 +48,31 @@ A perceptron can be thought of as just a single neuron.
 
 
 #### 2. Non-linear activation functions
-    - Sigmoid
+- **Sigmoid:**
+    - $f(x) = \frac{1}{1 + e^{-x}}$
+    - **Pros:**
+        - Smooth, differentiable
+        - Monotonic
+        - Bounded
+    - **Cons:**
+        - Vanishing gradient
+        - Saturated neurons
+        - Not zero-centered
+- **Tanh:**
+    - $f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
+    - **Pros:**
+        - Smooth, differentiable
+        - Monotonic
+        - Zero-centered
+    - **Cons:**
+        - Vanishing gradient
+        - Saturated neurons
+- **ReLU:**
+    - $f(x) = \max(0, x)$
+    - **Pros:**
+        - Simple, efficient
+        - Non-saturating
+        - Zero-centered
+    - **Cons:**
+        - Dying ReLU problem
+        - Not smooth, not differentiable
